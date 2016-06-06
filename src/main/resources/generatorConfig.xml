@@ -5,7 +5,7 @@
 <!-- mvn mybatis-generator:generate -->
 <generatorConfiguration>
 	<classPathEntry
-		location="D:\GBJ_learning\Maven\maven\mysql\mysql-connector-java\5.1.21\mysql-connector-java-5.1.21.jar" />
+		location="D:\GBJ_EHSY\maven-repository\mysql\mysql-connector-java\6.0.2\mysql-connector-java-6.0.2.jar" />
 
 	<context id="baseTradeTables" targetRuntime="MyBatis3">
 		<commentGenerator>
@@ -34,7 +34,7 @@
 		</sqlMapGenerator>
 
 		<javaClientGenerator type="XMLMAPPER"
-			targetPackage="com.jxc.core.dao" targetProject="src/main/java">
+			targetPackage="com.spring.demo.dao" targetProject="src/main/java">
 			<property name="enableSubPackages" value="true" />
 		</javaClientGenerator>
 
