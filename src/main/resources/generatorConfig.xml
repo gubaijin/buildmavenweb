@@ -2,7 +2,7 @@
 <!DOCTYPE generatorConfiguration
   PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
   "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
-<!-- mvn mybatis-generator:generate -->
+<!-- 在项目根目录下(pom.xml同级)打开命令行工具：mvn mybatis-generator:generate -->
 <generatorConfiguration>
 	<classPathEntry
 		location="D:\xxx\maven-repository\com\oracle\ojdbc7\7.0\ojdbc7-7.0.jar" />
@@ -27,12 +27,14 @@
 			<property name="enableSubPackages" value="true" />
 			<property name="trimStrings" value="true" />
 		</javaModelGenerator>
-
+		
+		<!-- Mapper映射 -->
 		<sqlMapGenerator targetPackage="mybatis"
 			targetProject="src/main/resources">
 			<property name="enableSubPackages" value="true" />
 		</sqlMapGenerator>
 
+		<!-- Mapper接口 -->
 		<javaClientGenerator type="XMLMAPPER"
 			targetPackage="com.spring.demo.mybatis.dao" targetProject="src/main/java">
 			<property name="enableSubPackages" value="true" />
