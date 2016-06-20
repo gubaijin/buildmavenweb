@@ -5,15 +5,15 @@
 <!-- mvn mybatis-generator:generate -->
 <generatorConfiguration>
 	<classPathEntry
-		location="D:\xxx\maven-repository\com\oracle\ojdbc7\7.0\ojdbc7-7.0.jar" />
+		location="D:\xxxxx\maven-repository\mysql\mysql-connector-java\6.0.2\mysql-connector-java-6.0.2.jar" />
 
 	<context id="baseTradeTables" targetRuntime="MyBatis3">
 		<commentGenerator>
 			<property name="suppressAllComments" value="true" />
 		</commentGenerator>
 
-		<jdbcConnection driverClass="oracle.jdbc.OracleDriver"
-			connectionURL="jdbc:oracle:thin:@xxx:xxx:xxx:xxx:orcl" userId="xxxxxx"
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://xxx.xxx.xxx.xxx:3306/test" userId="xxxxxx"
 			password="xxxxxx">
 		</jdbcConnection>
 
@@ -22,7 +22,7 @@
 		</javaTypeResolver>
 
 		<!-- 后台生成 -->
-		<javaModelGenerator targetPackage="com.spring.demo.mybatis.model"
+		<javaModelGenerator targetPackage="com.spring.demo.model"
 			targetProject="src/main/java">
 			<property name="enableSubPackages" value="true" />
 			<property name="trimStrings" value="true" />
@@ -34,11 +34,11 @@
 		</sqlMapGenerator>
 
 		<javaClientGenerator type="XMLMAPPER"
-			targetPackage="com.spring.demo.mybatis.dao" targetProject="src/main/java">
+			targetPackage="com.spring.demo.dao" targetProject="src/main/java">
 			<property name="enableSubPackages" value="true" />
 		</javaClientGenerator>
 
-		<table tableName="DESC_INFO">
+		<table tableName="USER">
 		</table>
 	</context>
 </generatorConfiguration>
