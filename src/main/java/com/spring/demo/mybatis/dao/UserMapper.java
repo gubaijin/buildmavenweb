@@ -1,9 +1,10 @@
-package com.spring.demo.dao;
+package com.spring.demo.mybatis.dao;
 
-import com.spring.demo.model.User;
-import com.spring.demo.model.UserExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import com.spring.demo.mybatis.model.User;
+import com.spring.demo.mybatis.model.UserExample;
 
 public interface UserMapper {
     /**

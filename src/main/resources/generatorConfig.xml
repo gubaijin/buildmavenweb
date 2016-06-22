@@ -5,7 +5,7 @@
 <!-- 在项目根目录下(pom.xml同级)打开命令行工具：mvn mybatis-generator:generate -->
 <generatorConfiguration>
 	<classPathEntry
-		location="D:\xxx\maven-repository\com\oracle\ojdbc7\7.0\ojdbc7-7.0.jar" />
+		location="D:\GBJ_EHSY\maven-repository\com\oracle\ojdbc7\7.0\ojdbc7-7.0.jar" />
 
 	<context id="baseTradeTables" targetRuntime="MyBatis3">
 		<commentGenerator>
@@ -13,8 +13,8 @@
 		</commentGenerator>
 
 		<jdbcConnection driverClass="oracle.jdbc.OracleDriver"
-			connectionURL="jdbc:oracle:thin:@xxx:xxx:xxx:xxx:orcl" userId="xxxxxx"
-			password="xxxxxx">
+			connectionURL="jdbc:oracle:thin:@121.199.39.199:1521:ehsy" userId="ehsy_gateway"
+			password="ehsy2015">
 		</jdbcConnection>
 
 		<javaTypeResolver>

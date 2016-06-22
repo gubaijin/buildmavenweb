@@ -43,12 +43,6 @@
 			<groupId>commons-logging</groupId>
 			<artifactId>commons-logging</artifactId>
 		</dependency>
-		<!-- 测试包 -->
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<scope>test</scope>
-		</dependency>
 		<!-- spring mvc -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -88,6 +82,27 @@
       		<artifactId>ojdbc7</artifactId>
       		<version>7.0</version>
   		</dependency>
+  		<dependency>
+          <groupId>commons-dbcp</groupId>
+          <artifactId>commons-dbcp</artifactId>
+      </dependency>
+      		<!-- 测试包 -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+		      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-test</artifactId>
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-logging-juli -->
+<dependency>
+    <groupId>org.apache.tomcat.embed</groupId>
+    <artifactId>tomcat-embed-logging-juli</artifactId>
+    <version>9.0.0.M6</version>
+</dependency>
+      
 	</dependencies>
 
 

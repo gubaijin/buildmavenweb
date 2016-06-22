@@ -1,4 +1,4 @@
-package com.spring.demo.model;
+package com.spring.demo.mybatis.model;
 
 public class User {
     /**
