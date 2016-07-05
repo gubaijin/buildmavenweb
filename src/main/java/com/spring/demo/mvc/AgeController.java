@@ -6,8 +6,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.spring.demo.dao.UserMapper;
-import com.spring.demo.model.User;
+import com.spring.demo.mybatis.dao.UserMapper;
+import com.spring.demo.mybatis.model.User;
 
 @Controller
 @RequestMapping("/mvc")
