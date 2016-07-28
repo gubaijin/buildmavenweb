@@ -12,8 +12,15 @@ import com.spring.demo.mybatis.model.User;
 @Controller
 @RequestMapping("/mvc")
 public class AgeController {
+
+	@RequestMapping("/age")
+	public String age(@RequestParam(value = "name", required = false, defaultValue = "World") String name,
+					  Model model) {
+		model.addAttribute("name", name);
+		return "/demo/age";
+	}
 	
-	@Autowired
+/*	@Autowired
 	private UserMapper userMapper;
 
 	@RequestMapping("/age")
@@ -27,5 +34,5 @@ public class AgeController {
 			model.addAttribute("age", user.getAge()+"");
 		}
 		return "/demo/age";
-	}
+	}*/
 }
