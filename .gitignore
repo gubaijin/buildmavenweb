@@ -1,2 +1,8 @@
 /target/
 /.settings/
+/.settings
+/target
+/.classpath
+/.project
+/buildmavenweb.iml
+/logs
