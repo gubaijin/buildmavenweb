@@ -1,8 +1,5 @@
 package com.spring.demo.redis;
 
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-
 /**
  * Created by ehsy_it on 2016/8/7.
  */
@@ -31,9 +28,9 @@ public class RedisMain {
         System.out.println(value);*/
 
         //spring集成redis集群
-        ApplicationContext ctx = new ClassPathXmlApplicationContext("/spring-redisCluster.xml");
+        /*ApplicationContext ctx = new ClassPathXmlApplicationContext("/spring-redisCluster.xml");
         RedisClusterUtils redisClusterUtils = (RedisClusterUtils) ctx.getBean("redisClusterUtils");
         redisClusterUtils.set("redisCluster", "RedisClusterUtils");
-        System.out.println(redisClusterUtils.get("redisCluster"));
+        System.out.println(redisClusterUtils.get("redisCluster"));*/
     }
 }
