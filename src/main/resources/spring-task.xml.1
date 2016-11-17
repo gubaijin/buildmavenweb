@@ -7,9 +7,9 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
         http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd"
 	default-lazy-init="true">
-
-    <task:scheduled-tasks>  
-		<task:scheduled ref="task" method="doCheck"    cron="0/2 * * * * ?" />  
+<task:scheduler id="poolTaskScheduler" pool-size="10" ></task:scheduler>
+    <task:scheduled-tasks scheduler="poolTaskScheduler">
+		<task:scheduled ref="task" method="doCheck"    cron="0/2 * * * * ?" />
     </task:scheduled-tasks>  
 
 
